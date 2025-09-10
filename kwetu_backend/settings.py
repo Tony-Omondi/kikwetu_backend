@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jf@muz-h%5q!qpvs0!--epvq%f2t(1*mz6&zou)2msy7)%ce!m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -93,10 +93,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'kwetu_backend.wsgi.application'
 
 
-CORS_ALLOWED_ORIGINS = [
-       'http://localhost:5173',
-   ]
-
+# CORS_ALLOWED_ORIGINS = [
+#        'http://localhost:5173',
+#    ]
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
